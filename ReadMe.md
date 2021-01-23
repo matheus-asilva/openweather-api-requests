@@ -23,4 +23,13 @@ Where:
 - `city_ids`: List of ids for each city
 - `api_key`: User key for OpenWeather API
     - You can find [here](https://openweathermap.org/appid) how to create an user api key.
+ 
+ 4. Get percentage of computed ids
+ ```bash
+ $ curl -i -H "Content-Type: application/json" -X GET http://127.0.0.1:5000/getinfo
+ ```
+ ```
+ > {"progress": 0.95}
+ ```
  ---
+
