@@ -4,7 +4,7 @@
 ## Example
 1. Clone the current repository
 ```bash
-$ git clone openweather-api-requests
+$ git clone https://github.com/matheus-asilva/openweather-api-requests.git
 $ cd openweather-api-requests
 ```
 
