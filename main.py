@@ -18,7 +18,7 @@ async def get_city_info(city_ids: list, api_key: str) -> None:
     api_key (str): API's USER ID provided from OpenWeather
 
     Returns:
-    None
+    Error message if request fails
 
     """
 
