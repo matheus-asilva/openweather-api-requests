@@ -21,17 +21,16 @@ $ curl -v -H "Content-Type: application/json" -X POST -d \
 http://localhost:5000/getinfo
 ```
 
+Where:
+- `city_ids`: List of ids for each city
+- `api_key`: User key for OpenWeather API
+    - You can find [here](https://openweathermap.org/appid) how to create an user api key.
+
 4. Get json files
 ```bash
 $ sudo docker cp openweather-api:data data
 ```
 
-
-Where:
-- `city_ids`: List of ids for each city
-- `api_key`: User key for OpenWeather API
-    - You can find [here](https://openweathermap.org/appid) how to create an user api key.
- 
  5. Get percentage of computed ids
  ```bash
  $ curl -i -H "Content-Type: application/json" -X GET http://localhost:5000/getinfo
