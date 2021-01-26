@@ -7,4 +7,4 @@ RUN mkdir data
 
 COPY main.py ./main.py
 
-RUN python3 main.py
+CMD python3 main.py
