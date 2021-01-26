@@ -56,8 +56,7 @@ async def get_city_info(city_ids: list, api_key: str) -> None:
                     json.dump(data, fp, indent=4, sort_keys=True, default=str)
         else:
             message = f"ERROR {response.status_code}"
-            print(message)
-            return message
+            assert message
 
 class GetInfo(Resource):
     """API Class responsible to get information from OpenWeatherAPI
